@@ -10,7 +10,13 @@ import time
 Key = keyboard.Key
 
 
+# each animal image is controlled by an Animal class
 class Animal:
+	# name: the name of the animal (e.g. 'rat')
+	# animationKey: the key to press to trigger the full animation in Resolume
+	# loopKey: the key to press to trigger the idle loop animation in Resolume
+	# idleBlockTime: the time in seconds to prevent the idle animation from triggering
+	#                after the full animation starts
 	def __init__(self, name, animationKey, loopKey, idleBlockTime):
 		self.name = name
 		self.animationKey = animationKey
@@ -19,6 +25,7 @@ class Animal:
 		self.idleBlockTime = idleBlockTime
 		self.state = False
 
+	# update the state of the electrode and play the animation if appropriate
 	def UpdateState(self, newState):
 		if (not self.state) and newState:
 			print("  == %s touched ==" % self.name)
@@ -27,27 +34,32 @@ class Animal:
 		else:
 			self.state = newState
 
+	# play the full animation
 	def PlayAnimation(self):
 		keyboard.Tap(self.animationKey)
 		self.idleBlock = time.monotonic() + self.idleBlockTime
 
+	# play the idle animation
 	def PlayIdle(self):
 		if time.monotonic() > self.idleBlock:
 			print("  %s idle" % self.name)
 			keyboard.Tap(self.loopKey)
 		else:
+			# the full animation is still playing! don't interrupt it
 			print("  %s idle (blocked)" % self.name)
 
 
-
-
+# mapping from the electrode channel number to the animal object to manage it
 electrode_map = {
-	1: Animal('Rat', Key.R, Key.E, 8),
+	1: Animal('Rat', Key.R, Key.E, 8), # rat has no idle animation, but E isn't bound to anything
 	2: Animal('Raccoon', Key.C, Key.T, 14),
 	3: Animal('Falcon', Key.F, Key.H, 8),
 	4: Animal('Pigeon', Key.P, Key.D, 7),
 	5: Animal('Sparrow', Key.S, Key.B, 18),
 }
+
+
+######## SET UP SERIAL ########
 
 def find_controller():
 	for port in comports():
@@ -63,6 +75,7 @@ print('Found controller on %s' % dev)
 controller = serial.Serial(dev)
 
 
+# configure the touch board's electrode thresholds from 'thresholds.json'
 def upload_thresholds():
 	data = None
 	with open('thresholds.json', 'r') as f:
@@ -78,6 +91,7 @@ def upload_thresholds():
 		controller.write(tths_str.encode('utf-8'))
 		controller.write(rths_str.encode('utf-8'))
 
+
 print('uploading thresholds...')
 upload_thresholds()
 		
@@ -92,6 +106,7 @@ def handler(signum, frame):
 
 signal.signal(signal.SIGINT, handler)
 
+# make sure we're in Resolume so the key presses get where they need to
 print('Alt+Tab to Resolume')
 keyboard.Press(Key.MENU)
 keyboard.Tap(Key.TAB)
@@ -100,14 +115,17 @@ keyboard.Release(Key.MENU)
 
 print('begin main loop')
 
+# this function triggers the idle loop animations randomly
 loopTime = time.monotonic()
 def random_loop():
 	global loopTime
 	_, animal = random.choice(list(electrode_map.items()))
 	animal.PlayIdle()
+	# trigger again in 1-3 seconds
 	loopTime = time.monotonic() + 1 + (2 * random.random())
 
 
+# process each incoming line, and update electrode states
 def process_line(line):
 	label_match = re.match(r'^[A-Z]+', line)
 	if not label_match:
@@ -124,7 +142,9 @@ def process_line(line):
 		animal.UpdateState(values[i])
 
 
+# loop forever (until someone hits Ctrl-C, and then exit cleanly)
 while True:
 	process_line(controller.readline().decode('utf-8'))
 	if loopTime < time.monotonic():
+		# trigger an idle animation
 		random_loop()
