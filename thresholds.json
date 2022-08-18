@@ -1,0 +1,22 @@
+{
+	"sparrow": {
+		"touch": 5,
+		"release": 2
+	},
+	"pigeon": {
+		"touch": 10,
+		"release": 5
+	},
+	"falcon": {
+		"touch": 5,
+		"release": 2
+	},
+	"raccoon": {
+		"touch": 5,
+		"release": 2
+	},
+	"rat": {
+		"touch": 5,
+		"release": 2
+	}
+}
