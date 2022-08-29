@@ -1,0 +1,1801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Composition name="Composition" uniqueId="1661796455508" numDecks="1" currentDeckIndex="0" numLayers="10" numColumns="13" compositionIsRelative="0">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="13" microVersion="1" revision="16350"/>
+	<CompositionInfo name="Synanthropes" description="" width="1200" height="1920">
+		<DeckInfo name="Media" id="1660664926102" closed="0"/>
+	</CompositionInfo>
+	<Params name="Params">
+		<Param name="Name" T="STRING" default="" value="Synanthropes"/>
+		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999987088106">
+			<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999998445688"/>
+		</ParamRange>
+		<Param name="KeyboardShortcutPreset" T="STRING" default="" value="Default"/>
+		<Param name="MidiShortcutPreset" T="STRING" default="" value="Default"/>
+		<Param name="OscShortcutPreset" T="STRING" default="" value="OutputAllMessages"/>
+		<Param name="DmxShortcutPreset" T="STRING" default="" value="Default"/>
+	</Params>
+	<CompositionView name="CompositionView">
+		<FoldParams name="FoldParams"/>
+	</CompositionView>
+	<AudioTrack name="AudioTrack">
+		<AudioEffectChain name="AudioEffectChain"/>
+	</AudioTrack>
+	<VideoTrack name="VideoTrack">
+		<Params name="Params">
+			<ParamRange name="Width" T="DOUBLE" default="1920" value="1200">
+				<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
+			</ParamRange>
+			<ParamRange name="Height" T="DOUBLE" default="1080" value="1920">
+				<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+			</ParamRange>
+		</Params>
+		<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796455621" baseType="RenderPassChain">
+			<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660664926066" baseType="Effect" index="0">
+				<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+			</RenderPass>
+		</RenderPass>
+		<ChoosableMixer name="Blend"/>
+	</VideoTrack>
+	<Layer uniqueId="1660664938932" layerIndex="0">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="Layer #" value="Falcon Touch"/>
+		</Params>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams">
+				<FoldState component="/groupedcomponent/renderpasschaincomponent/cubetiles/" folded="0"/>
+				<FoldState component="/groupedcomponent/renderpasschaincomponent/cubetiles/view/groupedcomponent/" folded="0"/>
+			</FoldParams>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1200" value="1200">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796460480" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660664938213" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660664927221" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660664927225" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer uniqueId="1660753124734" layerIndex="1">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="Layer #" value="Falcon Animation"/>
+		</Params>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1200" value="1200">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796460574" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753124709" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660753124632" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660753124639" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer uniqueId="1660753122385" layerIndex="2">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="Layer #" value="Pigeon Touch"/>
+		</Params>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1200" value="1200">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796460668" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753122184" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660664927213" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660664927217" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer uniqueId="1660753125555" layerIndex="3">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="Layer #" value="Pigeon Animation"/>
+		</Params>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1200" value="1200">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796460762" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753125628" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660753125862" baseType="Mixer">
+					<Params name="Params">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.5">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						</ParamRange>
+					</Params>
+				</RenderPass>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660753125872" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer uniqueId="1660753122575" layerIndex="4">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="Layer #" value="Raccoon Touch"/>
+		</Params>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1200" value="1200">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796460856" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753122648" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660753122957" baseType="Mixer">
+					<Params name="Params">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.5">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						</ParamRange>
+					</Params>
+				</RenderPass>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660753122961" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer uniqueId="1660753126365" layerIndex="5">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="Layer #" value="Raccoon Animation"/>
+		</Params>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1200" value="1200">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796460950" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753126438" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660753126749" baseType="Mixer">
+					<Params name="Params">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.5">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						</ParamRange>
+					</Params>
+				</RenderPass>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660753126753" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer uniqueId="1660753123141" layerIndex="6">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="Layer #" value="Rat Touch"/>
+		</Params>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1200" value="1200">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796461044" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753123214" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660753123521" baseType="Mixer">
+					<Params name="Params">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.5">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						</ParamRange>
+					</Params>
+				</RenderPass>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660753123525" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer uniqueId="1660753127123" layerIndex="7">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="Layer #" value="Rat Animation"/>
+		</Params>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1200" value="1200">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796461138" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753127196" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660753127507" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660753127511" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer uniqueId="1660753123738" layerIndex="8">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="Layer #" value="Sparrow Touch"/>
+		</Params>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1200" value="1200">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796461232" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753123811" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660753124101" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660753124112" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer uniqueId="1660753127693" layerIndex="9">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="Layer #" value="Sparrow Animation"/>
+		</Params>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1200" value="1200">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796461326" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753127766" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="67464114" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660753128077" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660753128081" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<CrossFader name="CrossFader">
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.032958984375"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796455660" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660664926084" baseType="Effect" index="0">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660664927253" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Blend mode">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464115" storeChoices="0"/>
+				</Params>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1660664927257" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</CrossFader>
+	<TempoController name="TempoController"/>
+	<Deck name="Deck" uniqueId="1660664926102" closed="0" numLayersWithContent="10" numColumnsWithContent="2" numLayers="10" numColumns="13" deckIndex="0">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="empty" value="Media"/>
+		</Params>
+		<Column uniqueId="1660664926822" columnIndex="0"/>
+		<Column uniqueId="1660664926823" columnIndex="1"/>
+		<Column uniqueId="1660664926824" columnIndex="2"/>
+		<Column uniqueId="1660664926825" columnIndex="3"/>
+		<Column uniqueId="1660664926826" columnIndex="4"/>
+		<Column uniqueId="1660664926827" columnIndex="5"/>
+		<Column uniqueId="1660664926828" columnIndex="6"/>
+		<Column uniqueId="1660664926829" columnIndex="7"/>
+		<Column uniqueId="1660664926830" columnIndex="8"/>
+		<Column uniqueId="1660664937506" columnIndex="9"/>
+		<Column uniqueId="1660664940219" columnIndex="10"/>
+		<Column uniqueId="1660844947107" columnIndex="11"/>
+		<Column uniqueId="1660844948783" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1660664938933" layerIndex="0" columnIndex="0">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\falcTouch.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\falcTouch.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="falcTouch" value="falcTouch"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="6.3333333333333330373s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="6333.3333333333330302" defaultBeatsDuration="16">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="6.3333333333333330373" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.3157894736842105643"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="16" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="6333.3333333333330302"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/clipproperties/cuepoints/" folded="1"/>
+					<FoldState component="/clipproperties/transport/" folded="0"/>
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
+					<FoldState component="/groupedcomponent/videotrackinfocomponent/tracksettingscomponent/videosettingscomponent/" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\falcTouch.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="600" value="600">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.018310546875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="559" value="559">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.017059326171875"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796461654" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753122321" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="157.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50240325927734375"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-253.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49613189697265625"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="68">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.068000000000000004885"/>
+							</ParamRange>
+							<ParamRange name="Scale H" T="DOUBLE" default="100" value="107.91366906474819132">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.10791366906474819665"/>
+							</ParamRange>
+							<ParamRange name="Rotation Z" T="DOUBLE" default="0" value="-3">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49166666666666664076"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="600" height="559" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796462779" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\falcTouch.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753124735" layerIndex="1" columnIndex="0">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\falcAnim.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\falcAnim.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="falcAnim" value="falcAnim"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="5.6723333333333334494s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="5672.3333333333330302" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5.6723333333333334494" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.35258858788270552864"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="4" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5672.3333333333330302"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\falcAnim.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="960" value="960">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.029296875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796461746" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753124789" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-57.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49912261962890625"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="384">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.505859375"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="150">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.14999999999999999445"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="960" height="1920" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796462843" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\falcAnim.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753122386" layerIndex="2" columnIndex="0">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\pigeTouch.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\pigeTouch.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="pigeTouch" value="pigeTouch"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="5.3333333333333339255s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="5333.3333333333339397" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5.3333333333333339255" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.37499999999999994449"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5333.3333333333339397"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\pigeTouch.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="660" value="660">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0201416015625"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="500" value="500">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0152587890625"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796461669" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753122438" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-237.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49637603759765625"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-21.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49967193603515625"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="61">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.060999999999999998668"/>
+							</ParamRange>
+							<ParamRange name="Scale W" T="DOUBLE" default="100" value="90">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.089999999999999996669"/>
+							</ParamRange>
+							<ParamRange name="Scale H" T="DOUBLE" default="100" value="103">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.10299999999999999434"/>
+							</ParamRange>
+							<ParamRange name="Rotation Z" T="DOUBLE" default="0" value="-1">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49722222222222223209"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="660" height="500" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796462934" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\pigeTouch.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753125649" layerIndex="3" columnIndex="0">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\pigeAnim.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\pigeAnim.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="pigeAnim" value="pigeAnim"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="5.9000000000000003553s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="5900" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5.9000000000000003553" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.33898305084745761206"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="4" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5900"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\pigeAnim.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="900" value="900">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0274658203125"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1050" value="1050">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03204345703125"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796461651" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753125986" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-389">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4940643310546875"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-794.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.48787689208984375"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="214.06766917293234087">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.21406766917293235108"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="900" height="1050" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796463016" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\pigeAnim.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753122669" layerIndex="4" columnIndex="0">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\ratTouch.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\raccTouch.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="raccTouch" value="raccTouch"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="6.5s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="6500" defaultBeatsDuration="16">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="6.5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.30769230769230770939"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="16" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="6500"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\ratTouch.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="514" value="514">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.01568603515625"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="488" value="488">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.014892578125"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796461661" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753123004" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-380">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49420166015625"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="427.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50652313232421875"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="74">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.073999999999999996336"/>
+							</ParamRange>
+							<ParamRange name="Scale W" T="DOUBLE" default="100" value="76.706766917293222718">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.076706766917293223162"/>
+							</ParamRange>
+							<ParamRange name="Scale H" T="DOUBLE" default="100" value="92">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.091999999999999998446"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="514" height="488" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796463091" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\raccTouch.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753126459" layerIndex="5" columnIndex="0">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\raccAnim.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\raccAnim.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="raccAnim" value="raccAnim"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="13.166666666666667851s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="13166.666666666667879" defaultBeatsDuration="32">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="13.166666666666667851" value="1.999999999999999778">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.15189873417721516669"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="13166.666666666667879"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\raccAnim.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="900" value="900">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0274658203125"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="514" value="514">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.01568603515625"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796461993" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753126798" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-271">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4958648681640625"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="260.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50397491455078125"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="151.50000000000002842">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.15150000000000002354"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="900" height="514" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796463155" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\raccAnim.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753123235" layerIndex="6" columnIndex="0">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\ratTouch.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\ratTouch.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="ratTouch" value="ratTouch"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="6.5000000000000008882s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="6500.0000000000009095" defaultBeatsDuration="16">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="6.5000000000000008882" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.30769230769230765388"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="16" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="6500.0000000000009095"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponent/autopilot/" folded="0"/>
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\ratTouch.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="428" value="428">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0130615234375"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="554" value="554">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.01690673828125"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796461960" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753123570" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="284">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50433349609375"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="75.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50115203857421875"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="48.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.048500000000000001443"/>
+							</ParamRange>
+							<ParamRange name="Scale H" T="DOUBLE" default="100" value="122.50000000000001421">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.12250000000000001166"/>
+							</ParamRange>
+							<ParamRange name="Rotation Z" T="DOUBLE" default="0" value="1">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50277777777777776791"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="428" height="554" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796463314" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\ratTouch.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753127217" layerIndex="7" columnIndex="0">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\ratAnim.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\ratAnim.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="ratAnim" value="ratAnim"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="7.3406666666666673393s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="7340.6666666666669698" defaultBeatsDuration="16">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="7.3406666666666673393" value="1.999999999999999778">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.27245481790936332267"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="16" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="7340.6666666666669698"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\ratAnim.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="110" value="110">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.00335693359375"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796462015" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753127554" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="510.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50778961181640625"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-295.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49549102783203125"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="172.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.17249999999999998668"/>
+							</ParamRange>
+							<ParamRange name="Scale W" T="DOUBLE" default="100" value="78.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.078500000000000000333"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="110" height="1920" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796463418" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\ratAnim.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753123832" layerIndex="8" columnIndex="0">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\sparTouch.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\sparTouch.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="sparTouch" value="sparTouch"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="16.000000000000003553s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="16000.000000000003638" defaultBeatsDuration="32">
+							<Params name="Params">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.37947059237271446586"/>
+								</ParamRange>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="16.000000000000003553" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.12499999999999997224"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="16000.000000000001819"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\sparTouch.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="320" value="320">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.009765625"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="337" value="337">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.010284423828125"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796462037" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753124169" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="236.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50360870361328125"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="468.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50714874267578125"/>
+							</ParamRange>
+							<ParamRange name="Scale W" T="DOUBLE" default="100" value="53.000000000000007105">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05300000000000000544"/>
+							</ParamRange>
+							<ParamRange name="Scale H" T="DOUBLE" default="100" value="73.000000000000014211">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.073000000000000009326"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="320" height="337" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796463492" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\sparTouch.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753127787" layerIndex="9" columnIndex="0">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\sparAnim.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\sparAnim.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="sparAnim" value="sparAnim"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="16.266666666666669272s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="16266.666666666669698" defaultBeatsDuration="32">
+							<Params name="Params">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999974187315">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999996502797"/>
+								</ParamRange>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="16.266666666666669272" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.12295081967213113139"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="4" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="32" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="16266.666666666667879"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\sparAnim.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="900" value="900">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0274658203125"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1133" value="1133">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.034576416015625"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796462098" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753128124" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-521">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4920501708984375"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-57">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4991302490234375"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="168">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.16800000000000001044"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="900" height="1133" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796463600" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\sparAnim.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660664940220" layerIndex="0" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1660753124736" layerIndex="1" columnIndex="1">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\falcLoop.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\falcLoop.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="falcLoop" value="falcLoop"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="734.06666666666671972">
+						<DurationSource name="DurationSource" defaultDuration="0.73406666666666675614s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="1" defaultMillisecondsDuration="734.06666666666671972" defaultBeatsDuration="1">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.73406666666666675614" value="0.73406666666666675614">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+								</ParamRange>
+								<ParamChoice name="PlayDirection" T="INT32" default="2" value="1" storeChoices="0"/>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="4" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="1" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="734.06666666666671972"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\falcLoop.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="816" value="816">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.02490234375"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="708" value="708">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0216064453125"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796462263" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753124961" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="344">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5052490234375"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-879.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.48657989501953125"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="49">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.049000000000000001887"/>
+							</ParamRange>
+							<ParamRange name="Scale H" T="DOUBLE" default="100" value="101">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.10100000000000000644"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="816" height="708" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796463666" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\falcLoop.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753122387" layerIndex="2" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1660753125675" layerIndex="3" columnIndex="1">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\pigeLoop.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\pigeLoop.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="pigeLoop" value="pigeLoop"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="0.56723333333333336714s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="567.23333333333334849" defaultBeatsDuration="1">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.56723333333333336714" value="0.56723333333333336714">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="4" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="1" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="567.23333333333334849"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\pigeLoop.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="393" value="393">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.011993408203125"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="318" value="318">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.00970458984375"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796462311" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753126162" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="274.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50418853759765625"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-422.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49355316162109375"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="66.631578947368410581">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.066631578947368416688"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="393" height="318" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796463730" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\pigeLoop.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753122695" layerIndex="4" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1660753126485" layerIndex="5" columnIndex="1">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\raccLoop.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\raccLoop.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="raccLoop" value="raccLoop"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1.4347666666666667457s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1434.7666666666666515" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.4347666666666667457" value="1.4347666666666667457">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="3" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="2" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1434.7666666666666515"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\raccLoop.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="952" value="952">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.029052734375"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="800" value="800">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0244140625"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796462386" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753126968" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-235">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4964141845703125"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="360">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5054931640625"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="68.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.068500000000000005329"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="952" height="800" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796463846" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\raccLoop.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660753123261" layerIndex="6" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1660753127243" layerIndex="7" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1660753123858" layerIndex="8" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1660753127813" layerIndex="9" columnIndex="1">
+			<PreloadData>
+				<AudioFile value="C:\naau-synanthropes-media\Media\Media\sparLoop.wav"/>
+				<VideoFile value="C:\naau-synanthropes-media\Media\Media\sparLoop.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="sparLoop" value="sparLoop"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="0.56723333333333336714s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="567.23333333333334849" defaultBeatsDuration="1">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.56723333333333336714" value="0.56723333333333336714">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
+								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="4" storeChoices="0"/>
+							</Params>
+							<Beats_double name="Beats_double" mode="0" numDetectedBeats="-1" numManualBeats="1" detectedTempo="-1" manualTempo="120" detected="0"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="567.23333333333334849"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<AudioTrack name="AudioTrack">
+				<Params name="Params">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="-2.8929823996598619986e-15">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50118723362727224391"/>
+					</ParamRange>
+				</Params>
+				<AudioEffectChain name="AudioEffectChain"/>
+				<PrimarySource>
+					<AudioFileSource FileName="C:\naau-synanthropes-media\Media\Media\sparLoop.wav"/>
+				</PrimarySource>
+			</AudioTrack>
+			<VideoTrack name="VideoTrack" manualDuration="0">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="352" value="352">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0107421875"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="308" value="308">
+						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.0093994140625"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796462373" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753128296" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-437.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49332427978515625"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-815">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4875640869140625"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="49.500000000000007105">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.04950000000000000927"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend"/>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="352" height="308" type="VideoFormatReaderSource">
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1661796463941" baseType="RenderPassChain"/>
+						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\sparLoop.mov" LoadingThread="TTM_THREADED"/>
+					</VideoSource>
+				</PrimarySource>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1660664938934" layerIndex="0" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1660753124737" layerIndex="1" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1660753122388" layerIndex="2" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1660753125701" layerIndex="3" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1660753122721" layerIndex="4" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1660753126511" layerIndex="5" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1660753123287" layerIndex="6" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1660753127269" layerIndex="7" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1660753123884" layerIndex="8" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1660753127839" layerIndex="9" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1660664938935" layerIndex="0" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1660753124738" layerIndex="1" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1660753122389" layerIndex="2" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1660753125727" layerIndex="3" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1660753122747" layerIndex="4" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1660753126537" layerIndex="5" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1660753123313" layerIndex="6" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1660753127295" layerIndex="7" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1660753123910" layerIndex="8" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1660753127865" layerIndex="9" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1660664938936" layerIndex="0" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1660753124739" layerIndex="1" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1660753122390" layerIndex="2" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1660753125753" layerIndex="3" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1660753122773" layerIndex="4" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1660753126563" layerIndex="5" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1660753123339" layerIndex="6" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1660753127321" layerIndex="7" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1660753123936" layerIndex="8" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1660753127891" layerIndex="9" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1660664938937" layerIndex="0" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1660753124740" layerIndex="1" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1660753122391" layerIndex="2" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1660753125779" layerIndex="3" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1660753122799" layerIndex="4" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1660753126589" layerIndex="5" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1660753123365" layerIndex="6" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1660753127347" layerIndex="7" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1660753123962" layerIndex="8" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1660753127917" layerIndex="9" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1660664938938" layerIndex="0" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1660753124741" layerIndex="1" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1660753122392" layerIndex="2" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1660753125805" layerIndex="3" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1660753122825" layerIndex="4" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1660753126615" layerIndex="5" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1660753123391" layerIndex="6" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1660753127373" layerIndex="7" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1660753123988" layerIndex="8" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1660753127943" layerIndex="9" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1660664938939" layerIndex="0" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1660753124742" layerIndex="1" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1660753122393" layerIndex="2" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1660753125831" layerIndex="3" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1660753122851" layerIndex="4" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1660753126641" layerIndex="5" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1660753123417" layerIndex="6" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1660753127399" layerIndex="7" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1660753124014" layerIndex="8" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1660753127969" layerIndex="9" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1660664938940" layerIndex="0" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1660753124743" layerIndex="1" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1660753122394" layerIndex="2" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1660753125857" layerIndex="3" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1660753122877" layerIndex="4" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1660753126667" layerIndex="5" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1660753123443" layerIndex="6" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1660753127425" layerIndex="7" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1660753124040" layerIndex="8" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1660753127995" layerIndex="9" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1660664938941" layerIndex="0" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1660753124744" layerIndex="1" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1660753122395" layerIndex="2" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1660753125891" layerIndex="3" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1660753122903" layerIndex="4" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1660753126693" layerIndex="5" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1660753123469" layerIndex="6" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1660753127451" layerIndex="7" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1660753124066" layerIndex="8" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1660753128021" layerIndex="9" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1660664938942" layerIndex="0" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1660753124745" layerIndex="1" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1660753122396" layerIndex="2" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1660753125917" layerIndex="3" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1660753122929" layerIndex="4" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1660753126719" layerIndex="5" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1660753123495" layerIndex="6" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1660753127477" layerIndex="7" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1660753124092" layerIndex="8" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1660753128047" layerIndex="9" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1660844947108" layerIndex="0" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1660844947109" layerIndex="1" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1660844947110" layerIndex="2" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1660844947111" layerIndex="3" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1660844947112" layerIndex="4" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1660844947113" layerIndex="5" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1660844947114" layerIndex="6" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1660844947115" layerIndex="7" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1660844947116" layerIndex="8" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1660844947117" layerIndex="9" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1660844948784" layerIndex="0" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1660844948785" layerIndex="1" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1660844948786" layerIndex="2" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1660844948787" layerIndex="3" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1660844948788" layerIndex="4" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1660844948789" layerIndex="5" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1660844948790" layerIndex="6" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1660844948791" layerIndex="7" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1660844948792" layerIndex="8" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1660844948793" layerIndex="9" columnIndex="12"/>
+	</Deck>
+</Composition>
+
