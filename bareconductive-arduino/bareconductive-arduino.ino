@@ -45,6 +45,13 @@
 #include "SerialController.h"
 smm::SerialController<> controller;
 
+bool running;
+void setRunning(int value) {
+	running = value;
+	Serial.print("running: ");
+	Serial.println(running);
+}
+
 #define SPARROW_ELECTRODE 5
 #define SPARROW_TTHS 5
 #define SPARROW_RTHS 2
@@ -128,6 +135,7 @@ void setup(){
 	setThresholds(RACCOON_ELECTRODE, RACCOON_TTHS, RACCOON_RTHS);
 	setThresholds(RAT_ELECTRODE, RAT_TTHS, RAT_RTHS);
 
+	controller.addCallback("set-running", setRunning);
 	controller.addCallback("sparrow-rths", setSparrowRths);
 	controller.addCallback("sparrow-tths", setSparrowTths);
 	controller.addCallback("pigeon-rths", setPigeonRths);
@@ -146,5 +154,7 @@ void setup(){
 void loop(){
 	controller.update();
 	MPR121.updateAll();
-	MPR121_Datastream.update();
+	if (running) {
+		MPR121_Datastream.update();
+	}
 }

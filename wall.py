@@ -12,6 +12,7 @@ Key = keyboard.Key
 
 # each animal image is controlled by an Animal class
 class Animal:
+	animationBlock = time.monotonic()
 	# name: the name of the animal (e.g. 'rat')
 	# animationKey: the key to press to trigger the full animation in Resolume
 	# loopKey: the key to press to trigger the idle loop animation in Resolume
@@ -36,8 +37,12 @@ class Animal:
 
 	# play the full animation
 	def PlayAnimation(self):
-		keyboard.Tap(self.animationKey)
-		self.idleBlock = time.monotonic() + self.idleBlockTime
+		if time.monotonic() > Animal.animationBlock:
+			keyboard.Tap(self.animationKey)
+			self.idleBlock = time.monotonic() + self.idleBlockTime
+			Animal.animationBlock = self.idleBlock
+		else:
+			print("    blocked animation for %s" % self.name)
 
 	# play the idle animation
 	def PlayIdle(self):
@@ -94,6 +99,8 @@ def upload_thresholds():
 
 print('uploading thresholds...')
 upload_thresholds()
+#ensure data stream is running
+controller.write(b'{set-running:1}')
 		
 
 
@@ -108,9 +115,13 @@ signal.signal(signal.SIGINT, handler)
 
 # make sure we're in Resolume so the key presses get where they need to
 print('Alt+Tab to Resolume')
-keyboard.Press(Key.MENU)
-keyboard.Tap(Key.TAB)
-keyboard.Release(Key.MENU)
+
+def alt_tab():
+	keyboard.Press(Key.MENU)
+	keyboard.Tap(Key.TAB)
+	keyboard.Release(Key.MENU)
+alt_tab()
+alt_tab()
 
 
 print('begin main loop')
