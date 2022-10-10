@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "node-osc": "^8.0.6"
+    "node-osc": "^8.0.6",
+    "serialport": "^10.4.0"
   }
 }
