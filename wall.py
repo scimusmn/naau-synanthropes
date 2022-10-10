@@ -56,11 +56,11 @@ class Animal:
 
 # mapping from the electrode channel number to the animal object to manage it
 electrode_map = {
-	1: Animal('Rat', Key.R, Key.E, 8), # rat has no idle animation, but E isn't bound to anything
-	2: Animal('Raccoon', Key.C, Key.T, 14),
-	3: Animal('Falcon', Key.F, Key.H, 8),
-	4: Animal('Pigeon', Key.P, Key.D, 7),
-	5: Animal('Sparrow', Key.S, Key.B, 18),
+	1: Animal('Rat', Key.R, Key.E, 7.34), # rat has no idle animation, but E isn't bound to anything
+	2: Animal('Raccoon', Key.C, Key.T, 13.16),
+	3: Animal('Falcon', Key.F, Key.H, 5.7),
+	4: Animal('Pigeon', Key.P, Key.D, 5.9),
+	5: Animal('Sparrow', Key.S, Key.B, 16.26),
 }
 
 

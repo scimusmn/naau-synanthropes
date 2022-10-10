@@ -4,15 +4,15 @@
 		"release": 1
 	},
 	"pigeon": {
-		"touch": 10,
+		"touch": 9,
 		"release": 5
 	},
 	"falcon": {
-		"touch": 1,
+		"touch": 5,
 		"release": 1
 	},
 	"raccoon": {
-		"touch": 1,
+		"touch": 3,
 		"release": 1
 	},
 	"rat": {
