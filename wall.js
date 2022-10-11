@@ -16,7 +16,7 @@ function TriggerLoop() {
 		[ Sparrow, Rat, Raccoon, Pigeon, Falcon ]
 	);
 	choice.TriggerLoop();
-	const time = 3 + (2*Math.random());
+	const time = 1 + (2*Math.random());
 	setTimeout(TriggerLoop, 1000 * time);
 }
 

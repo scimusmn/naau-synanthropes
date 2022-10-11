@@ -10,6 +10,8 @@ const {
 const Electrode = require('./Electrode.js');
 
 
+let allBlocked = false;
+
 class Animal {
 	constructor(resolume, animation, index) {
 		this.resolume = resolume;
@@ -23,12 +25,14 @@ class Animal {
 
 
 	OnTouch() {
-		if (!this.blocked) this.Play();
+		if ((!this.blocked) && (!allBlocked)) 
+			this.Play();
 	}
 
 
 	TriggerLoop() {
-		if (!this.blocked) this.Loop();
+		if ((!this.blocked) && (!allBlocked)) 
+			this.Loop();
 	}
 	
 
@@ -42,7 +46,9 @@ class Animal {
 			this.resolume,
 			time => {
 				this.blocked = true;
+				allBlocked = true;
 				setTimeout(() => this.blocked = false, 1000 * time);
+				setTimeout(() => allBlocked = false, 3000);
 			}
 		);
 	}
