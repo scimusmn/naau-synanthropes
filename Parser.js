@@ -24,7 +24,7 @@ function ParseChannels(str) {
 			diff: diffValues[i+1],
 			touch: touchValues[i+1],
 		};
-		console.log(obj);
+		// console.log(obj);
 		channels.push(obj);
 	}
 
@@ -33,7 +33,7 @@ function ParseChannels(str) {
 
 
 
-const frameRegex = /RTHS[\s\S]*?TTHS/gm;
+const frameRegex = /RTHS:[\s\S]*?TTHS:/gm;
 
 class ElectrodeParser extends Transform {
 	constructor(options) {
@@ -48,6 +48,8 @@ class ElectrodeParser extends Transform {
 			// no frame detected, leave buffer unmodified
 			return [null, buf];
 		// strip buffer up to and including the packet
+		if (match.index === undefined)
+			match.index = 0;
 		buf = buf.slice(match.index + match[0].length);
 		
 		const channels = ParseChannels(match[0]);
