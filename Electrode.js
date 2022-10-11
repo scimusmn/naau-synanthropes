@@ -6,14 +6,13 @@ class Electrode {
 		this.index = index;
 		this.callback = callback;
 		this.touched = false;
-		this.blocked = false;
 	}
 
 
 	Update(data) {
 		const frame = data[this.index];
 		if (frame.touch === '1') {
-			if (this.touched == false && !this.blocked) {
+			if (this.touched == false) {
 				console.log(`${this.index} touched`);
 				this.callback();
 			}
@@ -22,12 +21,6 @@ class Electrode {
 		else if (frame.touch === '0') {
 			this.touched = false;
 		}
-	}
-
-
-	Block(time) {
-		this.blocked = true;
-		setTimeout(() => this.blocked = false, time * 1000);
 	}
 }
 
