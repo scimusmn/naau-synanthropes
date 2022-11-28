@@ -1,4 +1,7 @@
 /* eslint-disable no-console */
+const dotenv = require('dotenv');
+dotenv.config();
+
 const TouchBoard = require('./TouchBoard');
 const Parser = require('./Parser');
 

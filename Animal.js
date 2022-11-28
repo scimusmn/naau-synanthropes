@@ -1,7 +1,8 @@
 // this works fine but eslint complains for some reason??
 const Osc = require('node-osc'); // eslint-disable-line import/no-unresolved
 
-const Resolume = new Osc.Client('127.0.0.1', 7000);
+const { OSC_ADDRESS, OSC_PORT } = process.env;
+const Resolume = new Osc.Client(OSC_ADDRESS, OSC_PORT);
 
 const {
   SparrowAnimation, RatAnimation,

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.3",
     "node-osc": "^8.0.6",
     "serialport": "^10.4.0"
   },

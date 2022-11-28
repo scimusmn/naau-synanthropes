@@ -25,7 +25,8 @@ async function FindPath(vendorId, productId) {
 }
 
 async function TouchBoard() {
-  const path = await FindPath('2a6e', '8003');
+  const { BOARD_VID, BOARD_PID } = process.env;
+  const path = await FindPath(BOARD_VID, BOARD_PID);
   const board = new SerialPort({ path, baudRate: 9600 });
 
   // upload touch/release thresholds

@@ -17,37 +17,42 @@ class AnimalAnimation {
   }
 }
 
+const { SPARROW_LOOP, SPARROW_TOUCH, SPARROW_ANIM, SPARROW_TIMEOUT } = process.env;
 exports.SparrowAnimation = new AnimalAnimation({
-  loop: '/composition/layers/10/clips/2/connect',
-  touch: '/composition/layers/9/clips/1/connect',
-  anim: '/composition/layers/10/clips/1/connect',
-  timeout: 16.267,
+  loop: SPARROW_LOOP,
+  touch: SPARROW_TOUCH,
+  anim: SPARROW_ANIM,
+  timeout: SPARROW_TIMEOUT,
 });
 
+const { RAT_LOOP, RAT_TOUCH, RAT_ANIM, RAT_TIMEOUT } = process.env;
 exports.RatAnimation = new AnimalAnimation({
-  loop: null,
-  touch: '/composition/layers/7/clips/1/connect',
-  anim: '/composition/layers/8/clips/1/connect',
-  timeout: 7.341,
+  loop: RAT_LOOP,
+  touch: RAT_TOUCH,
+  anim: RAT_ANIM,
+  timeout: RAT_TIMEOUT,
 });
 
+const { RACCOON_LOOP, RACCOON_TOUCH, RACCOON_ANIM, RACCOON_TIMEOUT } = process.env;
 exports.RaccoonAnimation = new AnimalAnimation({
-  loop: '/composition/layers/6/clips/2/connect',
-  touch: '/composition/layers/5/clips/1/connect',
-  anim: '/composition/layers/6/clips/1/connect',
-  timeout: 13.167,
+  loop: RACCOON_LOOP,
+  touch: RACCOON_TOUCH,
+  anim: RACCOON_ANIM,
+  timeout: RACCOON_TIMEOUT,
 });
 
+const { PIGEON_LOOP, PIGEON_TOUCH, PIGEON_ANIM, PIGEON_TIMEOUT } = process.env;
 exports.PigeonAnimation = new AnimalAnimation({
-  loop: '/composition/layers/4/clips/2/connect',
-  touch: '/composition/layers/3/clips/1/connect',
-  anim: '/composition/layers/4/clips/1/connect',
-  timeout: 5.9,
+  loop: PIGEON_LOOP,
+  touch: PIGEON_TOUCH,
+  anim: PIGEON_ANIM,
+  timeout: PIGEON_TIMEOUT,
 });
 
+const { FALCON_LOOP, FALCON_TOUCH, FALCON_ANIM, FALCON_TIMEOUT } = process.env;
 exports.FalconAnimation = new AnimalAnimation({
-  loop: '/composition/layers/2/clips/2/connect',
-  touch: '/composition/layers/1/clips/1/connect',
-  anim: '/composition/layers/2/clips/1/connect',
-  timeout: 5.672,
+  loop: FALCON_LOOP,
+  touch: FALCON_TOUCH,
+  anim: FALCON_ANIM,
+  timeout: FALCON_TIMEOUT,
 });
