@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< Updated upstream
 <Composition name="Composition" uniqueId="1665163588893" numDecks="1" currentDeckIndex="0" numLayers="10" numColumns="13" compositionIsRelative="0">
+=======
+<Composition name="Composition" uniqueId="1670272573729" numDecks="1" currentDeckIndex="0" numLayers="10" numColumns="13" compositionIsRelative="0">
+>>>>>>> Stashed changes
 	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="13" microVersion="1" revision="16350"/>
 	<CompositionInfo name="Synanthropes" description="" width="1200" height="1920">
 		<DeckInfo name="Media" id="1660664926102" closed="0"/>
 	</CompositionInfo>
 	<Params name="Params">
 		<Param name="Name" T="STRING" default="" value="Synanthropes"/>
+<<<<<<< Updated upstream
 		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999976763032">
 			<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999996891376"/>
+=======
+		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999966437958">
+			<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999995337063"/>
+>>>>>>> Stashed changes
 		</ParamRange>
 		<Param name="KeyboardShortcutPreset" T="STRING" default="" value="Default"/>
 		<Param name="MidiShortcutPreset" T="STRING" default="" value="Default"/>
@@ -29,6 +38,7 @@
 				<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 			</ParamRange>
 		</Params>
+<<<<<<< Updated upstream
 		<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163589006" baseType="RenderPassChain">
 			<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660664926066" baseType="Effect" index="0">
 				<Params name="Params">
@@ -39,6 +49,10 @@
 						<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49993896484375"/>
 					</ParamRange>
 				</Params>
+=======
+		<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272573842" baseType="RenderPassChain">
+			<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660664926066" baseType="Effect" index="0">
+>>>>>>> Stashed changes
 				<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 			</RenderPass>
 		</RenderPass>
@@ -67,6 +81,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 				</ParamRange>
 			</Params>
+<<<<<<< Updated upstream
 			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163593911" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660664938213" baseType="Effect" index="0">
 					<Params name="Params">
@@ -77,6 +92,10 @@
 							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50031280517578125"/>
 						</ParamRange>
 					</Params>
+=======
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272578701" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660664938213" baseType="Effect" index="0">
+>>>>>>> Stashed changes
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
 			</RenderPass>
@@ -117,6 +136,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 				</ParamRange>
 			</Params>
+<<<<<<< Updated upstream
 			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163594005" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753124709" baseType="Effect" index="0">
 					<Params name="Params">
@@ -125,6 +145,16 @@
 						</ParamRange>
 						<ParamRange name="Scale" T="DOUBLE" default="100" value="95.286307053941897038">
 							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.095286307053941893264"/>
+=======
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272578795" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753124709" baseType="Effect" index="0">
+					<Params name="Params">
+						<ParamRange name="Position Y" T="DOUBLE" default="0" value="-41">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4993743896484375"/>
+						</ParamRange>
+						<ParamRange name="Scale" T="DOUBLE" default="100" value="95">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.09500000000000000111"/>
+>>>>>>> Stashed changes
 						</ParamRange>
 					</Params>
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
@@ -167,7 +197,11 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 				</ParamRange>
 			</Params>
+<<<<<<< Updated upstream
 			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163594099" baseType="RenderPassChain">
+=======
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272578889" baseType="RenderPassChain">
+>>>>>>> Stashed changes
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753122184" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -209,6 +243,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 				</ParamRange>
 			</Params>
+<<<<<<< Updated upstream
 			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163594193" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753125628" baseType="Effect" index="0">
 					<Params name="Params">
@@ -220,6 +255,16 @@
 						</ParamRange>
 						<ParamRange name="Scale" T="DOUBLE" default="100" value="99.999993668552249915">
 							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.099999993668552250581"/>
+=======
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272578983" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753125628" baseType="Effect" index="0">
+					<Params name="Params">
+						<ParamRange name="Position X" T="DOUBLE" default="0" value="26">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.500396728515625"/>
+						</ParamRange>
+						<ParamRange name="Position Y" T="DOUBLE" default="0" value="18">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.500274658203125"/>
+>>>>>>> Stashed changes
 						</ParamRange>
 					</Params>
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
@@ -262,7 +307,11 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 				</ParamRange>
 			</Params>
+<<<<<<< Updated upstream
 			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163594287" baseType="RenderPassChain">
+=======
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272579077" baseType="RenderPassChain">
+>>>>>>> Stashed changes
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753122648" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -304,8 +353,18 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 				</ParamRange>
 			</Params>
+<<<<<<< Updated upstream
 			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163594381" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753126438" baseType="Effect" index="0">
+=======
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272579171" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753126438" baseType="Effect" index="0">
+					<Params name="Params">
+						<ParamRange name="Position X" T="DOUBLE" default="0" value="-48.5">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49925994873046875"/>
+						</ParamRange>
+					</Params>
+>>>>>>> Stashed changes
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
 			</RenderPass>
@@ -336,9 +395,12 @@
 		</AudioTrack>
 		<VideoTrack name="VideoTrack">
 			<Params name="Params">
+<<<<<<< Updated upstream
 				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="1"/>
 				</ParamRange>
+=======
+>>>>>>> Stashed changes
 				<ParamRange name="Width" T="DOUBLE" default="1200" value="1200">
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.03662109375"/>
 				</ParamRange>
@@ -346,7 +408,11 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 				</ParamRange>
 			</Params>
+<<<<<<< Updated upstream
 			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163594475" baseType="RenderPassChain">
+=======
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272579265" baseType="RenderPassChain">
+>>>>>>> Stashed changes
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753123214" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -355,7 +421,17 @@
 				<Params name="Params">
 					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="67464114" storeChoices="0"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660753123521" baseType="Mixer"/>
+=======
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1660753123521" baseType="Mixer">
+					<Params name="Params">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.5">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5"/>
+						</ParamRange>
+					</Params>
+				</RenderPass>
+>>>>>>> Stashed changes
 			</ChoosableMixer>
 			<ChoosableMixer name="Transition">
 				<Params name="Params">
@@ -388,7 +464,11 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 				</ParamRange>
 			</Params>
+<<<<<<< Updated upstream
 			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163594569" baseType="RenderPassChain">
+=======
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272579359" baseType="RenderPassChain">
+>>>>>>> Stashed changes
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753127196" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -413,9 +493,13 @@
 		</Params>
 		<ClipTransition name="ClipTransition"/>
 		<LayerView name="LayerView">
+<<<<<<< Updated upstream
 			<FoldParams name="FoldParams">
 				<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
 			</FoldParams>
+=======
+			<FoldParams name="FoldParams"/>
+>>>>>>> Stashed changes
 		</LayerView>
 		<AudioTrack name="AudioTrack">
 			<AudioEffectChain name="AudioEffectChain"/>
@@ -432,7 +516,11 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 				</ParamRange>
 			</Params>
+<<<<<<< Updated upstream
 			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163594663" baseType="RenderPassChain">
+=======
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272579453" baseType="RenderPassChain">
+>>>>>>> Stashed changes
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753123811" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -457,9 +545,13 @@
 		</Params>
 		<ClipTransition name="ClipTransition"/>
 		<LayerView name="LayerView">
+<<<<<<< Updated upstream
 			<FoldParams name="FoldParams">
 				<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
 			</FoldParams>
+=======
+			<FoldParams name="FoldParams"/>
+>>>>>>> Stashed changes
 		</LayerView>
 		<AudioTrack name="AudioTrack">
 			<AudioEffectChain name="AudioEffectChain"/>
@@ -476,6 +568,7 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05859375"/>
 				</ParamRange>
 			</Params>
+<<<<<<< Updated upstream
 			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163594757" baseType="RenderPassChain">
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753127766" baseType="Effect" index="0">
 					<Params name="Params">
@@ -487,6 +580,16 @@
 						</ParamRange>
 						<ParamRange name="Scale H" T="DOUBLE" default="100" value="94">
 							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.094000000000000000222"/>
+=======
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272579547" baseType="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753127766" baseType="Effect" index="0">
+					<Params name="Params">
+						<ParamRange name="Position Y" T="DOUBLE" default="0" value="-5.5">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49991607666015625"/>
+						</ParamRange>
+						<ParamRange name="Scale" T="DOUBLE" default="100" value="98">
+							<PhaseSourceStatic name="PhaseSourceStatic" phase="0.098000000000000003775"/>
+>>>>>>> Stashed changes
 						</ParamRange>
 					</Params>
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
@@ -519,7 +622,11 @@
 					<PhaseSourceStatic name="PhaseSourceStatic" phase="0.032958984375"/>
 				</ParamRange>
 			</Params>
+<<<<<<< Updated upstream
 			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163589045" baseType="RenderPassChain">
+=======
+			<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272573881" baseType="RenderPassChain">
+>>>>>>> Stashed changes
 				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660664926084" baseType="Effect" index="0">
 					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
@@ -584,7 +691,16 @@
 			</Transport>
 			<ClipView name="ClipView">
 				<FoldParams name="FoldParams">
+<<<<<<< Updated upstream
 					<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
+=======
+					<FoldState component="/clipproperties/cuepoints/" folded="1"/>
+					<FoldState component="/clipproperties/transport/" folded="0"/>
+					<FoldState component="/groupedcomponent/renderpasschaincomponent/transform/scale/" folded="0"/>
+					<FoldState component="/groupedcomponent/videotrackinfocomponent/" folded="0"/>
+					<FoldState component="/groupedcomponent/videotrackinfocomponent/tracksettingscomponent/" folded="0"/>
+					<FoldState component="/groupedcomponent/videotrackinfocomponent/tracksettingscomponent/videosettingscomponent/" folded="0"/>
+>>>>>>> Stashed changes
 				</FoldParams>
 			</ClipView>
 			<AudioTrack name="AudioTrack">
@@ -611,6 +727,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595182" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753122321" baseType="Effect" index="0">
 						<Params name="Params">
@@ -619,6 +736,16 @@
 							</ParamRange>
 							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-253.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49613189697265625"/>
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272579872" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753122321" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="127">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5019378662109375"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-237.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49637603759765625"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="68">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.068000000000000004885"/>
@@ -636,7 +763,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="600" height="559" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163596204" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272580994" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\falcTouch.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -695,14 +826,23 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595076" baseType="RenderPassChain">
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272579895" baseType="RenderPassChain">
+>>>>>>> Stashed changes
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753124789" baseType="Effect" index="0">
 						<Params name="Params">
 							<ParamRange name="Position X" T="DOUBLE" default="0" value="-57.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49912261962890625"/>
 							</ParamRange>
+<<<<<<< Updated upstream
 							<ParamRange name="Position Y" T="DOUBLE" default="0" value="395">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5060272216796875"/>
+=======
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="399">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5060882568359375"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="150">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.14999999999999999445"/>
@@ -714,7 +854,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="960" height="1920" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163596301" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272581089" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\falcAnim.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -775,6 +919,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595082" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753122438" baseType="Effect" index="0">
 						<Params name="Params">
@@ -786,6 +931,19 @@
 							</ParamRange>
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="63">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.063000000000000000444"/>
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272579878" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753122438" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-271">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4958648681640625"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-14.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49977874755859375"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="61">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.060999999999999998668"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Scale W" T="DOUBLE" default="100" value="90">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.089999999999999996669"/>
@@ -803,7 +961,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="660" height="500" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163596367" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272581155" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\pigeTouch.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -862,6 +1024,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595088" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753125986" baseType="Effect" index="0">
 						<Params name="Params">
@@ -870,6 +1033,16 @@
 							</ParamRange>
 							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-793.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.48789215087890625"/>
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272579866" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753125986" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-389">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4940643310546875"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-794.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.48787689208984375"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="214.06766917293234087">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.21406766917293235108"/>
@@ -881,7 +1054,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="900" height="1050" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163596486" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272581275" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\pigeAnim.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -942,6 +1119,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595095" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753123004" baseType="Effect" index="0">
 						<Params name="Params">
@@ -950,6 +1128,16 @@
 							</ParamRange>
 							<ParamRange name="Position Y" T="DOUBLE" default="0" value="415">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5063323974609375"/>
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272579884" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753123004" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-398.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49391937255859375"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="411.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50627899169921875"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="74">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.073999999999999996336"/>
@@ -957,8 +1145,13 @@
 							<ParamRange name="Scale W" T="DOUBLE" default="100" value="76.706766917293222718">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.076706766917293223162"/>
 							</ParamRange>
+<<<<<<< Updated upstream
 							<ParamRange name="Scale H" T="DOUBLE" default="100" value="92">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.091999999999999998446"/>
+=======
+							<ParamRange name="Scale H" T="DOUBLE" default="100" value="88">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.087999999999999994893"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 						</Params>
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
@@ -967,7 +1160,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="514" height="488" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163596577" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272581366" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\raccTouch.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -1026,6 +1223,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595418" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753126798" baseType="Effect" index="0">
 						<Params name="Params">
@@ -1034,6 +1232,16 @@
 							</ParamRange>
 							<ParamRange name="Position Y" T="DOUBLE" default="0" value="267">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5040740966796875"/>
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272580239" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753126798" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-271">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4958648681640625"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="260.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50397491455078125"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="151.50000000000002842">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.15150000000000002354"/>
@@ -1045,7 +1253,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="900" height="514" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163596668" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272581464" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\raccAnim.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -1107,6 +1319,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595385" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753123570" baseType="Effect" index="0">
 						<Params name="Params">
@@ -1115,6 +1328,16 @@
 							</ParamRange>
 							<ParamRange name="Position Y" T="DOUBLE" default="0" value="79.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50121307373046875"/>
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272580169" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753123570" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="260">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50396728515625"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="76.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50116729736328125"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="48.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.048500000000000001443"/>
@@ -1122,9 +1345,12 @@
 							<ParamRange name="Scale H" T="DOUBLE" default="100" value="122.50000000000001421">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.12250000000000001166"/>
 							</ParamRange>
+<<<<<<< Updated upstream
 							<ParamRange name="Rotation Z" T="DOUBLE" default="0" value="1">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50277777777777776791"/>
 							</ParamRange>
+=======
+>>>>>>> Stashed changes
 						</Params>
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
@@ -1132,7 +1358,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="428" height="554" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163596732" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272581528" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\ratTouch.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -1193,11 +1423,19 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595444" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753127554" baseType="Effect" index="0">
 						<Params name="Params">
 							<ParamRange name="Position X" T="DOUBLE" default="0" value="561.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50856781005859375"/>
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272580230" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753127554" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="542">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.508270263671875"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-295.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.49549102783203125"/>
@@ -1205,8 +1443,13 @@
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="172.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.17249999999999998668"/>
 							</ParamRange>
+<<<<<<< Updated upstream
 							<ParamRange name="Scale W" T="DOUBLE" default="100" value="78.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.078500000000000000333"/>
+=======
+							<ParamRange name="Scale W" T="DOUBLE" default="100" value="93">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.092999999999999999334"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 						</Params>
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
@@ -1215,7 +1458,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="110" height="1920" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163596850" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272581646" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\ratAnim.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -1279,6 +1526,7 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595519" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753124169" baseType="Effect" index="0">
 						<Params name="Params">
@@ -1287,6 +1535,16 @@
 							</ParamRange>
 							<ParamRange name="Position Y" T="DOUBLE" default="0" value="446">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.506805419921875"/>
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272580295" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753124169" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="222">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.503387451171875"/>
+							</ParamRange>
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="440">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5067138671875"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Scale W" T="DOUBLE" default="100" value="53.000000000000007105">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.05300000000000000544"/>
@@ -1301,7 +1559,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="320" height="337" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163596941" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272581737" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\sparTouch.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -1322,8 +1584,13 @@
 						<DurationSource name="DurationSource" defaultDuration="16.266666666666669272s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="16266.666666666669698" defaultBeatsDuration="32">
 							<Params name="Params">
+<<<<<<< Updated upstream
 								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999961275421">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999994559907"/>
+=======
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999950950347">
+									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.24999999999993005595"/>
+>>>>>>> Stashed changes
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="16.266666666666669272" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic" phase="0.12295081967213113139"/>
@@ -1363,11 +1630,19 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595491" baseType="RenderPassChain">
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753128124" baseType="Effect" index="0">
 						<Params name="Params">
 							<ParamRange name="Position X" T="DOUBLE" default="0" value="-539">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4917755126953125"/>
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272580301" baseType="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753128124" baseType="Effect" index="0">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-521">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4920501708984375"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-57">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4991302490234375"/>
@@ -1382,7 +1657,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="900" height="1133" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163597032" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272581828" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\sparAnim.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -1444,14 +1723,23 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595686" baseType="RenderPassChain">
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272580472" baseType="RenderPassChain">
+>>>>>>> Stashed changes
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753124961" baseType="Effect" index="0">
 						<Params name="Params">
 							<ParamRange name="Position X" T="DOUBLE" default="0" value="344">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5052490234375"/>
 							</ParamRange>
+<<<<<<< Updated upstream
 							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-866.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.48677825927734375"/>
+=======
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-862.5">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.48683929443359375"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="49">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.049000000000000001887"/>
@@ -1466,7 +1754,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="816" height="708" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163597123" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272581919" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\falcLoop.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -1526,7 +1818,11 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595751" baseType="RenderPassChain">
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272580535" baseType="RenderPassChain">
+>>>>>>> Stashed changes
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753126162" baseType="Effect" index="0">
 						<Params name="Params">
 							<ParamRange name="Position X" T="DOUBLE" default="0" value="274.5">
@@ -1545,7 +1841,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="393" height="318" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163597187" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272581983" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\pigeLoop.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -1605,14 +1905,23 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595758" baseType="RenderPassChain">
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272580574" baseType="RenderPassChain">
+>>>>>>> Stashed changes
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753126968" baseType="Effect" index="0">
 						<Params name="Params">
 							<ParamRange name="Position X" T="DOUBLE" default="0" value="-235">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.4964141845703125"/>
 							</ParamRange>
+<<<<<<< Updated upstream
 							<ParamRange name="Position Y" T="DOUBLE" default="0" value="322.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.50492095947265625"/>
+=======
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="360">
+								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.5054931640625"/>
+>>>>>>> Stashed changes
 							</ParamRange>
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="68.5">
 								<PhaseSourceStatic name="PhaseSourceStatic" phase="0.068500000000000005329"/>
@@ -1624,7 +1933,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="952" height="800" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163597305" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272582101" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\raccLoop.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>
@@ -1686,7 +1999,11 @@
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
+<<<<<<< Updated upstream
 				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163595847" baseType="RenderPassChain">
+=======
+				<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272580626" baseType="RenderPassChain">
+>>>>>>> Stashed changes
 					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1660753128296" baseType="Effect" index="0">
 						<Params name="Params">
 							<ParamRange name="Position X" T="DOUBLE" default="0" value="-437.5">
@@ -1705,7 +2022,11 @@
 				<ChoosableMixer name="Blend"/>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="352" height="308" type="VideoFormatReaderSource">
+<<<<<<< Updated upstream
 						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1665163597369" baseType="RenderPassChain"/>
+=======
+						<RenderPass name="RenderPassChain" type="RenderPassChain" uniqueTypeId="RenderPassChain" uniqueId="1670272582178" baseType="RenderPassChain"/>
+>>>>>>> Stashed changes
 						<VideoFormatReaderSource fileName="C:\naau-synanthropes-media\Media\Media\sparLoop.mov" LoadingThread="TTM_THREADED"/>
 					</VideoSource>
 				</PrimarySource>

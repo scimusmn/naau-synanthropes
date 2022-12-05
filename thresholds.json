@@ -4,8 +4,13 @@
 		"release": 1
 	},
 	"pigeon": {
+<<<<<<< Updated upstream
 		"touch": 9,
 		"release": 5
+=======
+		"touch": 5,
+		"release": 2
+>>>>>>> Stashed changes
 	},
 	"falcon": {
 		"touch": 5,
